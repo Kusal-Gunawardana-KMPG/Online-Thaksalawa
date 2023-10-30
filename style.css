@@ -1,0 +1,207 @@
+@font-face {
+    font-family: "TESLA";
+    src: url("Fonts/TESLA.ttf");
+}
+
+@font-face {
+    font-family: "honeyscript";
+    src: url("Fonts/HoneyScript-Light.ttf");
+}
+
+@font-face {
+    font-family: "barlow";
+    src: url("Fonts/BarlowCondensed-Light.ttf");
+}
+
+@font-face {
+    font-family: "roboto";
+    src: url("Fonts/Roboto-Light.ttf");
+}
+
+.workspace {
+    background-image: url("resources/close-up-hand-taking-notes.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.LOGO {
+    background-image: url("resources/book\ original.png");
+    height: 75px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.LOGO2 {
+    background-image: url("resources/book\ original.png");
+    height: 75px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.title01 {
+    font-family: "honeyscript";
+    font-size: 30px;
+    letter-spacing: 7px;
+    font-weight: 600;
+}
+
+.title02 {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.space {
+    height: 30px;
+}
+
+.title-box {
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    background-color: brown;
+}
+
+.time {
+    color: rgb(229, 255, 0);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font: bolder;
+    font-size: 40px;
+}
+
+.time-box {
+    justify-content: center;
+}
+
+.time-title {
+    color: white;
+    font-size: 20px;
+    font-family: "roboto";
+    font: bolder;
+}
+
+.container {
+    width: 100%;
+    background-color: rgb(181, 99, 5);
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+}
+
+.advice {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    color: azure;
+    font-weight: normal;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.content-box {
+    background-color: rgb(149, 70, 9);
+    border-radius: 15px;
+    width: 100%;
+}
+
+.main-title {
+    font-family: "barlow";
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: bolder;
+    color: rgb(255, 254, 254);
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+.online-thaksalawa {
+    color: rgb(252, 254, 163);
+    font-family: "barlow";
+    font-weight: bolder;
+    font-size: 50px;
+    text-shadow: 2px 2px 5px rgb(5, 0, 0);
+}
+
+.footer {
+    color: azure;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.index-buttons1 {
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(255, 255, 255);
+    box-shadow: black;
+    background-color: rgb(130, 89, 12);
+    border-width: thin;
+    border-radius: 10px;
+    border-color: rgb(70, 49, 9);
+    width: 100%;
+}
+
+.index-buttons1:hover {
+    background-color: rgb(118, 81, 12);
+    border-color: aliceblue;
+    border-width: thin;
+}
+
+.signup-btn:hover {
+    background-color: rgb(118, 81, 12);
+    border-color: aliceblue;
+    border-width: thin;
+}
+
+.student-email {
+    color: rgb(158, 2, 2);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bolder;
+    background-color: rgb(249, 240, 240);
+    border-radius: 10px;
+}
+
+.student-signup {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: normal;
+    background-color: rgb(57, 54, 54);
+    border-radius: 10px;
+}
+
+.days-30-trial {
+    border-radius: 10px;
+}
+
+.admin-login {
+    font-style: italic;
+    font-size: small;
+    color: transparent;
+}
+
+.index-buttons2 {
+    height: 53px;
+}
+
+.header-topic {
+    font-family: "roboto";
+    font-weight: bolder;
+    color: chartreuse;
+    text-shadow: 4px 2px 10px #ae8d05;
+    font-size: 25px;
+}
+
+.header-topic:hover {
+    color: rgb(250, 246, 246);
+}
+
+.academic-teacher {
+    font-family: "barlow";
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.academic-teacher {
+    color: rgb(255, 255, 255);
+}

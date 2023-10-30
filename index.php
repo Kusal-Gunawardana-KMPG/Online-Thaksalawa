@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> Online Thaksalawa </title>
+
+    <link rel="stylesheet" href="bootstrap.css" />
+    <link rel="stylesheet" href="semantic.css" />
+    <link rel="stylesheet" href="mdb.min.css" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="resources/book.png" />
+</head>
+
+
+
+<!-- Online Thaksalawa Index Page Content -->
+
+<body class="workspace ">
+
+
+
+    <!-- SignIn Part -->
+
+    <div class="container-fluid  d-flex col-12 " id="signInBox">
+        <div class="row mt-1 mb-2 ">
+
+
+
+            <div class="col-12 col-lg-4 ">
+                <div class="container align-items-center ">
+
+                    <div class="row time-box text-center">
+
+                        <h1 id="time" class="time col-12"></h1>
+
+                        <h2 class="time-title advice col-12 text-wrap">Lost time cannot be regained <br>Start even now</h2>
+                        &nbsp;
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-12 col-lg-7  bg-secondary text-dark bg-opacity-50 text-center ml-1 mt-2  offset-lg-1" style="border-radius: 10px;">
+
+
+                <div class="title-box ">
+                    <div style="height: 20px;"></div>
+
+                    <div class="col-12 LOGO "></div>
+
+
+                    <div class="col-12 ">
+                        <p class="text-center main-title "> Welcome to <br /> <b class="online-thaksalawa ">Online<br /> Thaksalawa</b> </p>
+                    </div>
+                    &nbsp;
+                </div>
+
+                <div class="col-12  bg-opacity-75 bg-black border-primary" style="border-radius: 10px;">
+
+                    <div class="col-12 p-1">
+                        <label class="form-label  text-light">&nbsp;&nbsp;&nbsp;Email&nbsp;&nbsp;&nbsp;</label>
+                        <input type="email" class="form-control" placeholder="ex:- widun@gmail.com" id="signinemail" />
+                    </div>
+
+                    <div class="col-12 p-1">
+                        <label class="form-label text-light">&nbsp;&nbsp;&nbsp;Password&nbsp;&nbsp;&nbsp;</label>
+                        <input type="password" class="form-control" placeholder="ex:- **********" id="signinpassword" />
+                    </div>
+
+                </div>
+
+                <div class="col-12 row">
+                    <div class="col-12 col-lg-6 d-grid mt-1">
+
+                        <button onclick="signin();" class=" index-buttons1 text-wrap" style="font-size: 20px; color: white;font-family:'barlow' ;font-size: 50px;font-weight: bolder;">Sign In</button>
+
+                    </div>
+                    <div class="mt-1 col-12 col-lg-6 d-grid">
+                        <button onclick="changeView();" style="border-radius: 10px;  color: rgb(242, 255, 0);font-family:'barlow' ;font-size: 50px;font-weight: bolder; " class="days-30-trial btn btn-primary ">Sign Up </button>
+                    </div>
+                </div>
+
+                <div class="col-12  row  col-12 d-grid mt-1 text-center mb-1">
+
+                    <div class="ui buttons ">
+                        <button class="btn-outline-dark ui button col-lg-6 "><b style="font-size:medium; color: maroon;" onclick="teacher();">SignIn as a<br />Teacher</b></button>
+                        <div class="or text-center mt-2" style="color:black;"></div>
+                        <button class="btn-outline-dark ui button col-lg-6 "><b onclick="academic();" style="font-size:medium; color: maroon;">SignIn as a<br />Academic Officer</b></button>
+                    </div>
+
+                </div>
+
+                <div class="col-12 col-lg-12 text-center d-grid " onclick="adminsignin();">
+                    <p class="btn admin-login">Administrator Login</p>
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <!-- SignIn Part -->
+
+
+    <!-- SignUp Part -->
+
+
+    <div class=" d-flex col-12  d-none justify-content-center align-items-center p-lg-2" id="signUpBox">
+        <div class=" p-2 col-lg-9">
+
+            <div class="col-12 col-lg-12  bg-dark text-white bg-opacity-75 text-center " style="border-radius: 10px;">
+
+                <div class="col-12 ">
+                    <div class="title-box ">
+                        <div style="height: 20px;"></div>
+                        <div class="col-12 LOGO "></div>
+
+                        <div class="col-12 ">
+                            <p class="text-center main-title "> Welcome to <br /> <b class="online-thaksalawa ">Online<br /> Thaksalawa</b> </p>
+                        </div>
+                        &nbsp;
+                    </div>
+
+
+                    <div class="col-12 d-none" id="msgdiv">
+                        <div class="alert alert-danger" role="alert" id="alertdiv">
+
+                            <i class="bi bi-person-x fs-5" id="msg"> &nbsp;&nbsp;&nbsp;
+
+                            </i>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-12 justify-content-center text-center ">
+                        <div class="row g-2">
+
+                            <div class="col-12">
+                                <label style="color: white; text-shadow:2px 2px 5px black;" class="form-label student-signup bg-dark bg-opacity-50">&nbsp;&nbsp;&nbsp;Sign Up&nbsp;&nbsp;&nbsp;</label>
+                            </div>
+
+
+                            <div class="col-lg-6 ">
+                                <label class="form-label text-light bg-dark bg-opacity-75" style="border-radius: 15px;">&nbsp;&nbsp;&nbsp;&nbsp;First Name&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                                <input type="text" class="form-control" placeholder="ex:- Nimal" id="fname" />
+                            </div>
+
+                            <div class="col-lg-6 ">
+                                <label class="form-label text-light bg-dark bg-opacity-75" style="border-radius: 15px;">&nbsp;&nbsp;&nbsp;&nbsp;Last Name&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                                <input type="text" class="form-control" placeholder="ex:- Perera" id="lname" />
+                            </div>
+
+                            <div class="col-lg-6">
+                                <label class="form-label text-light bg-dark bg-opacity-75" style="border-radius: 15px;">&nbsp;&nbsp;&nbsp;&nbsp;Email&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                                <input type="email" class="form-control" placeholder="ex:-nadika@gmail.com" id="e" />
+                            </div>
+
+                            <div class="col-lg-6">
+                                <label class="form-label text-light bg-dark bg-opacity-75" style="border-radius: 15px;">&nbsp;&nbsp;&nbsp;&nbsp;Password&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                                <input type="password" class="form-control" placeholder="ex:- **********" id="p" />
+                            </div>
+
+                            <div class="col-lg-4 ">
+                                <label class="form-label text-light bg-dark bg-opacity-75" style="border-radius: 15px;">&nbsp;&nbsp;&nbsp;&nbsp;Mobile&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                                <input type="text" class="form-control" placeholder="ex:- 0771234568" id="mobile" />
+                            </div>
+
+                            <div class="col-lg-4 ">
+                                <label class="form-label text-light bg-dark bg-opacity-75" style="border-radius: 15px;">&nbsp;&nbsp;&nbsp;&nbsp;Grade&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                                <select class="form-control" id="grade">
+
+
+                                    <?php
+
+                                    require "connection.php";
+
+                                    $grade_rs = Database::search("SELECT * FROM `grade`");
+                                    $grade_num = $grade_rs->num_rows;
+
+                                    for ($x = 0; $x < $grade_num; $x++) {
+                                        $grade_data = $grade_rs->fetch_assoc();
+                                    ?>
+                                        <option value="<?php echo $grade_data["grade_id"]; ?>"><?php echo $grade_data["grade_name"]; ?></option>
+                                    <?php
+                                    }
+
+                                    ?>
+
+                                </select>
+                            </div>
+
+                            <div class="col-lg-4 ">
+                                <label class="form-label text-light bg-dark bg-opacity-75" style="border-radius: 15px;">&nbsp;&nbsp;&nbsp;&nbsp;Gender&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                                <select class="form-control" id="gender">
+
+                                    <?php
+
+
+
+                                    $rs = Database::search("SELECT * FROM `gender`");
+
+                                    $n = $rs->num_rows;
+
+                                    for ($x = 0; $x < $n; $x++) {
+                                        $d = $rs->fetch_assoc();
+
+                                    ?>
+
+                                        <option value="<?php echo $d["id"]; ?>"><?php echo $d["gender_name"]; ?></option>
+
+                                    <?php
+
+                                    }
+
+                                    ?>
+
+
+                                </select>
+                            </div>
+
+                            <div class="col-12 col-lg-6 d-grid">
+                                <button class="btn btn-primary signup-btn" onclick="signUp();" style="height: 50px; font-size: 25px;">Sign Up</button>
+                            </div>
+
+                            <div class="col-12 col-lg-6 d-grid">
+                                <button class="index-buttons1 text-wrap" onclick="changeView();" style="font-family: Arial, Helvetica, sans-serif; height: 50px; font-size: 18px;">Already have an account ? Sign In</button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="modal" tabindex="-1" id="studentverificationModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Student Verification</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <label class="form-label">Enter Your Verification Code</label>
+                                    <input type="text" class="form-control" id="studentvcode">
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary" onclick="studentverify();">Verify</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div style="height: 10px;"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SignUp Part -->
+
+
+    <!-- Online Thaksalawa Index Page Content -->
+
+
+
+    <div style="height: 20px;"></div>
+
+    <!--Online Thaksalawa footer -->
+
+    <div class="col-12 text-center d-none d-lg-block bg-dark footer fixed-bottom">
+        <p>&copy; 2023 Online Thaksalawa.lk || All Rights Reserved</p>
+    </div>
+
+    <!--Online Thaksalawa footer -->
+
+    </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="semantic.js"></script>
+    <script src="bootstrap.js"></script>
+    <script src="semantic.min.js"></script>
+
+    <script>
+        let time = document.getElementById("time");
+
+        setInterval(() => {
+            let d = new Date();
+            time.innerHTML = d.toLocaleTimeString();
+        }, 1000)
+    </script>
+
+
+
+
+
+
+
+</body>
+
+</html>
